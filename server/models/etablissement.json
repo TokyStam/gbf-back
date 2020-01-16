@@ -1,0 +1,29 @@
+{
+  "name": "etablissement",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nom": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "budgets": {
+      "type": "hasMany",
+      "model": "budget",
+      "foreignKey": ""
+    },
+    "utilisateurs": {
+      "type": "hasMany",
+      "model": "utilisateur",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

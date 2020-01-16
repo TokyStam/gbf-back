@@ -34,5 +34,33 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "chapitre": {
+    "dataSource": "db",
+    "public": true
+  },
+  "section": {
+    "dataSource": "db",
+    "public": true
+  },
+  "article": {
+    "dataSource": "db",
+    "public": true
+  },
+  "compte": {
+    "dataSource": "db",
+    "public": true
+  },
+  "budget": {
+    "dataSource": "db",
+    "public": true
+  },
+  "etablissement": {
+    "dataSource": "db",
+    "public": true
+  },
+  "utilisateur": {
+    "dataSource": "db",
+    "public": true
   }
 }

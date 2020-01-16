@@ -1,6 +1,17 @@
 {
-  "db": {
-    "name": "db",
+  "memory": {
+    "name": "memory",
     "connector": "memory"
+  },
+  "db": {
+    "host": "127.0.0.1",
+    "port": 27017,
+    "url": "",
+    "database": "gbfdata",
+    "password": "",
+    "name": "db",
+    "user": "",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
   }
 }

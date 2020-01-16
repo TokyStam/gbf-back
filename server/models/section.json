@@ -1,0 +1,29 @@
+{
+  "name": "section",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "numSec": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "chapitre": {
+      "type": "belongsTo",
+      "model": "chapitre",
+      "foreignKey": ""
+    },
+    "articles": {
+      "type": "hasMany",
+      "model": "article",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

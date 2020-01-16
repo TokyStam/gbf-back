@@ -1,0 +1,19 @@
+{
+  "name": "utilisateur",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "etablissements": {
+      "type": "hasMany",
+      "model": "etablissement",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

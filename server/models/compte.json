@@ -1,0 +1,29 @@
+{
+  "name": "compte",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "numCompte": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "article": {
+      "type": "belongsTo",
+      "model": "article",
+      "foreignKey": ""
+    },
+    "budgets": {
+      "type": "hasMany",
+      "model": "budget",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
