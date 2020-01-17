@@ -1,26 +1,21 @@
 {
-  "name": "chapitre",
+  "name": "programme",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "numChap": {
-      "type": "number",
+    "nom": {
+      "type": "string",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "sections": {
+    "etablissements": {
       "type": "hasMany",
-      "model": "section",
-      "foreignKey": ""
-    },
-    "category": {
-      "type": "belongsTo",
-      "model": "category",
+      "model": "etablissement",
       "foreignKey": ""
     }
   },
