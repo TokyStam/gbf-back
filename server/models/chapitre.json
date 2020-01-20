@@ -9,6 +9,10 @@
     "numChap": {
       "type": "number",
       "required": true
+    },
+    "intitule": {
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],
