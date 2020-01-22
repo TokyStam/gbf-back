@@ -18,14 +18,14 @@
       "model": "budget",
       "foreignKey": ""
     },
-    "utilisateurs": {
-      "type": "hasMany",
-      "model": "utilisateur",
-      "foreignKey": ""
-    },
     "programme": {
       "type": "belongsTo",
       "model": "programme",
+      "foreignKey": ""
+    },
+    "utilisateurs": {
+      "type": "hasAndBelongsToMany",
+      "model": "utilisateur",
       "foreignKey": ""
     }
   },

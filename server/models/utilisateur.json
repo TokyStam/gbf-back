@@ -9,7 +9,7 @@
   "validations": [],
   "relations": {
     "etablissements": {
-      "type": "hasMany",
+      "type": "hasAndBelongsToMany",
       "model": "etablissement",
       "foreignKey": ""
     }

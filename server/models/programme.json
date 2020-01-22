@@ -9,6 +9,9 @@
     "nom": {
       "type": "string",
       "required": true
+    },
+    "intitule": {
+      "type": "string"
     }
   },
   "validations": [],
