@@ -6,12 +6,21 @@
     "validateUpsert": true
   },
   "properties": {},
+  "scope": {
+    "include": ["roles"]
+  },
   "validations": [],
   "relations": {
     "etablissements": {
       "type": "hasAndBelongsToMany",
       "model": "etablissement",
       "foreignKey": ""
+    },
+    "roles": {
+      "type": "hasMany",
+      "model": "Role",
+      "foreignKey": "principalId",
+      "through": "RoleMapping"
     }
   },
   "acls": [
