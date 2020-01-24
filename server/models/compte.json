@@ -26,6 +26,11 @@
       "type": "hasMany",
       "model": "budget",
       "foreignKey": ""
+    },
+    "recettes": {
+      "type": "hasMany",
+      "model": "recette",
+      "foreignKey": ""
     }
   },
   "acls": [

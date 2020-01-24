@@ -1,0 +1,27 @@
+{
+  "name": "recette",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "montant": {
+      "type": "number",
+      "required": true
+    },
+    "annee": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "compte": {
+      "type": "belongsTo",
+      "model": "compte",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

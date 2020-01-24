@@ -70,5 +70,9 @@
   "programme": {
     "dataSource": "db",
     "public": true
+  },
+  "recette": {
+    "dataSource": "db",
+    "public": true
   }
 }

@@ -5,10 +5,12 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
   "scope": {
-    "include": ["roles"]
+    "include": [
+      "roles"
+    ]
   },
+  "properties": {},
   "validations": [],
   "relations": {
     "etablissements": {
@@ -35,6 +37,20 @@
       "principalType": "ROLE",
       "principalId": "admin",
       "permission": "ALLOW"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW",
+      "property": "__link__etablissements"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW",
+      "property": "__get__etablissements"
     }
   ],
   "methods": {}
